@@ -20,21 +20,18 @@
         {
           "type": "git",
           "url": "https://github.com/astoko/ParcelBuddy.git",
-          "commit": "f72035afa2fae6f31de14e25e5d821328f92157e"
+          "commit": "0fc777e5588bd27c4b10f02d5bec26af59b9a11c"
         }
       ],
       "build-commands": [
-        "install -D main.py /app/parcelapp",
-        "install -D .env /app/config/.env",
+        "install -D main.py /app/bin/parcelapp",
         "chmod +x /app/bin/parcelapp",
         "install -D io.github.astoko.ParcelBuddy.desktop /app/share/applications/io.github.astoko.ParcelBuddy.desktop",
         "install -D parcelapp.png /app/share/icons/hicolor/128x128/apps/io.github.astoko.ParcelBuddy.png",
-        "install -D parcelapp-256.png /app/share/icons/hicolor/256x256/apps/io.github.astoko.ParcelBuddy.png",
         "install -D requirements.txt /app/requirements.txt",
         "mkdir -p /app/share/parcelapp/icons",
-        "cp -r icons/* /app/share/parcelapp/icons/",
-        "install -Dm0644 LICENSE -t /app/share/licenses/io.github.astoko.ParcelBuddy/"
-      ]
+        "cp -r icons/* /app/share/parcelapp/icons/"
+    ]
     },
     {
       "name": "python3-requests",

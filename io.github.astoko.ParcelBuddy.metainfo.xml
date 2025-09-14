@@ -71,7 +71,7 @@
   <content_rating type="oars-1.1" />
 
   <releases>
-      <release version="0.1.2" date="2025-09-14">
+    <release version="0.1.2" date="2025-09-14">
       <url type="details">https://github.com/astoko/ParcelBuddy/compare/v0.1.1-alpha...v0.1.2-alpha</url>
       <description>
         <p>Getting Close..</p>
