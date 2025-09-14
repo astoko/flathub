@@ -20,7 +20,7 @@
         {
           "type": "git",
           "url": "https://github.com/astoko/ParcelBuddy.git",
-          "commit": ""
+          "commit": "f72035afa2fae6f31de14e25e5d821328f92157e"
         }
       ],
       "build-commands": [
