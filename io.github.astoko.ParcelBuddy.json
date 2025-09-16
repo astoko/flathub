@@ -23,15 +23,16 @@
           "commit": "0fc777e5588bd27c4b10f02d5bec26af59b9a11c"
         }
       ],
-      "build-commands": [
-        "install -D main.py /app/bin/parcelapp",
-        "chmod +x /app/bin/parcelapp",
-        "install -D io.github.astoko.ParcelBuddy.desktop /app/share/applications/io.github.astoko.ParcelBuddy.desktop",
-        "install -D parcelapp.png /app/share/icons/hicolor/256x256/apps/io.github.astoko.ParcelBuddy.png",
-        "install -D requirements.txt /app/requirements.txt",
-        "mkdir -p /app/share/parcelapp/icons",
-        "cp -r icons/* /app/share/parcelapp/icons/"
-    ]
+        "build-commands": [
+          "install -D main.py /app/bin/parcelapp",
+          "chmod +x /app/bin/parcelapp",
+          "install -D io.github.astoko.ParcelBuddy.desktop /app/share/applications/io.github.astoko.ParcelBuddy.desktop",
+          "install -D parcelapp.png /app/share/icons/hicolor/256x256/apps/io.github.astoko.ParcelBuddy.png",
+          "install -D requirements.txt /app/requirements.txt",
+          "mkdir -p /app/share/parcelapp/icons",
+          "cp -r icons/* /app/share/parcelapp/icons/",
+          "install -D io.github.astoko.ParcelBuddy.metainfo.xml /app/share/metainfo/io.github.astoko.ParcelBuddy.metainfo.xml"
+      ]
     },
     {
       "name": "python3-requests",
@@ -83,19 +84,6 @@
           "type": "file",
           "url": "https://files.pythonhosted.org/packages/5f/ed/539768cf28c661b5b068d66d96a2f155c4971a5d55684a514c1a0e0dec2f/python_dotenv-1.1.1-py3-none-any.whl",
           "sha256": "31f23644fe2602f88ff55e1f5c79ba497e01224ee7737937930c448e4d0e24dc"
-        }
-      ]
-    },
-    {
-      "name": "appdata",
-      "buildsystem": "simple",
-      "build-commands": [
-        "install -D io.github.astoko.ParcelBuddy.metainfo.xml /app/share/metainfo/io.github.astoko.ParcelBuddy.metainfo.xml"
-      ],
-      "sources": [
-        {
-          "type": "file",
-          "path": "io.github.astoko.ParcelBuddy.metainfo.xml"
         }
       ]
     }
